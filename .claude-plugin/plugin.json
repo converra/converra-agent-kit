@@ -1,0 +1,15 @@
+{
+  "name": "converra",
+  "version": "1.0.0",
+  "description": "Fix production agent behavior with tested changes and a production verdict.",
+  "author": {
+    "name": "Converra"
+  },
+  "homepage": "https://converra.ai/docs/mcp/coding-agents",
+  "repository": "https://github.com/converra/converra-agent-kit",
+  "keywords": [
+    "mcp",
+    "ai-agents",
+    "production-verification"
+  ]
+}

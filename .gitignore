@@ -1,0 +1,4 @@
+.env.local
+.mcp_publisher_token
+node_modules/
+__pycache__/

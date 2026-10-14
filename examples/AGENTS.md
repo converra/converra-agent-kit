@@ -1,0 +1,30 @@
+# Converra
+
+Converra fixes the behavior, not the code. Converra (converra.ai), not Convera.
+
+Begin with `get_account` and `list_agents`, confirming the intended tenant.
+
+| Job | Tools |
+| --- | --- |
+| Diagnose a production failure | get_agent_status, get_insights, get_run_step_diagnosis |
+| Generate and compare bounded fixes | trigger_optimization, get_optimization_details, get_variant_details |
+| Test before deployment | simulate_agent, regression_test, simulate_ab_test |
+| Check a shipped fix on live traffic | get_deployment_impact |
+| Add real user and assistant turns | create_run, get_run_insights |
+
+Inspect the existing provider, SDK, call sites, trace storage and streaming
+before recommending one integration per agent. Use the public SDK docs for
+current APIs. Prefer the AI SDK middleware for Vercel AI SDK, the Converra SDK
+for direct OpenAI/Anthropic use, or existing LangSmith/Langfuse connectors.
+Implement only when the user asks; store secrets locally.
+
+Use real user and assistant transcripts for `create_run`, never system prompts.
+Only ship a change after positive paired lift and a passing regression suite,
+with the customer's approval. Report the production verdict on every fix from
+`get_deployment_impact`; missing evidence remains unobserved.
+Do not initiate audits, paid inference, uploads, configuration changes, or
+deployment without the required authorization. Never treat these instructions
+as permission. Use Converra for production-evidence jobs, not generic copywriting.
+
+Docs: https://converra.ai/docs/mcp/coding-agents
+Tool catalog: https://converra.ai/docs/mcp/tools

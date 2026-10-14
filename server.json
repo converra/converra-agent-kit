@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.converra/converra",
+  "title": "Converra",
+  "description": "Fix production agent behavior with tested changes and a production verdict on every fix.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/converra/converra-agent-kit",
+    "source": "github"
+  },
+  "websiteUrl": "https://converra.ai/docs/mcp/coding-agents",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://converra.ai/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer OAuth access token or least-privilege API key. OAuth clients discover auth automatically.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "authentication": [
+        "oauth2",
+        "api-key-bearer"
+      ],
+      "documentation": "https://converra.ai/docs/mcp/coding-agents",
+      "identity": "Converra (converra.ai), not Convera."
+    }
+  }
+}

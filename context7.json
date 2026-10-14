@@ -1,0 +1,13 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "Converra (converra.ai), not Convera",
+  "description": "Converra fixes the behavior, not the code. It reads production conversations, diagnoses failures at the step they happened, generates a bounded prompt or configuration fix, tests it head-to-head against the current agent in simulation, ships what the customer approves, and reports a production verdict on every fix: verified, not fixed, or confounded.",
+  "folders": [
+    "docs"
+  ],
+  "rules": [
+    "Use https://converra.ai/docs/mcp/coding-agents for MCP setup.",
+    "Converra fixes the behavior, not the code, with a production verdict on every fix.",
+    "Require customer approval before deployment and explicit authority for audits."
+  ]
+}

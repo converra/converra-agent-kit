@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "converra": {
+      "type": "http",
+      "url": "https://converra.ai/api/mcp"
+    }
+  }
+}
